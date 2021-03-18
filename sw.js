@@ -27,23 +27,23 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-b1e8a98bd6f3e9efa836.js"
+    "url": "webpack-runtime-be31fd9d93367b2b9333.js"
   },
   {
     "url": "styles.a166b44acb4b6b67302e.css"
   },
   {
-    "url": "styles-83801f3b4dd3459a4027.js"
+    "url": "styles-e383b929d2d4095ae339.js"
   },
   {
-    "url": "framework-305b3707783ccc9d7ca6.js"
+    "url": "framework-cd3e1e804d552fa282ef.js"
   },
   {
-    "url": "app-6963b3e4696013ae9029.js"
+    "url": "app-ff9f89bf46aa8c3728ff.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "5e0aa1bc76f4599c3898e598ed028c35"
+    "revision": "400ab0d4466087ea5443657c70c6f4bb"
   },
   {
     "url": "static/webfonts/s/barlow/v5/7cHqv4kjgoGqM7E3p-ks51os.woff2"
@@ -58,16 +58,16 @@ self.__precacheManifest = [
     "url": "static/webfonts/s/barlow/v5/7cHqv4kjgoGqM7E30-8s51os.woff2"
   },
   {
-    "url": "static/webfonts/s/firacode/v9/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_GNsJVD7Ng.woff2"
+    "url": "static/webfonts/s/firacode/v10/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_GNsJVD7Ng.woff2"
   },
   {
-    "url": "static/webfonts/s/firacode/v9/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7Ng.woff2"
+    "url": "static/webfonts/s/firacode/v10/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7Ng.woff2"
   },
   {
-    "url": "static/webfonts/s/firacode/v9/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_A9sJVD7Ng.woff2"
+    "url": "static/webfonts/s/firacode/v10/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_A9sJVD7Ng.woff2"
   },
   {
-    "url": "static/webfonts/s/firacode/v9/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_ONrJVD7Ng.woff2"
+    "url": "static/webfonts/s/firacode/v10/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_ONrJVD7Ng.woff2"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-b0556ce5127c1a3e2490.js"
@@ -78,10 +78,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "75e47af2e6ed657670fc21803530861e"
+    "revision": "8257ae4090fefe2120860bfcb4903bfd"
   },
   {
-    "url": "polyfill-3f99b51aa82fcaeb5543.js"
+    "url": "polyfill-91861f81ca7f0737d9ad.js"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -173,7 +173,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-6963b3e4696013ae9029.js`))) {
+  if (!resources || !(await caches.match(`/app-ff9f89bf46aa8c3728ff.js`))) {
     return await fetch(event.request)
   }
 
